@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var num = prompt("Give me a number")
+console.log(num)
+var thou_mod = (num % 1000)
+var thou_even = (num - thou_mod)
+var thou = (thou_even / 1000)
+console.log(thou + " Thousands")
+var hun_mod = (thou_mod % 100)
+var hun_even = (thou_mod - hun_mod)
+var hun = (hun_even / 100)
+console.log(hun + " Hundreds")
+var ten_mod = (hun_mod % 10)
+var ten_even = (hun_mod - ten_mod)
+var ten = (ten_even / 10)
+console.log(ten + " Tens")
+var one_mod = (ten_mod % 1)
+var one_even = (ten_mod - one_mod)
+var one = (one_even / 1)
+console.log(one + " Ones")
+</script>
+</body>
+</html>
